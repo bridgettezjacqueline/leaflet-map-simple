@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Jacqueline's next stop...</div>
+  <div id="map-title">Un jour dans la vie de Jacqueline</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [48.8,2.3], // EDIT coordinates to re-center map
+    center: [47.626, -122.363], // EDIT coordinates to re-center map
     zoom: 15,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
@@ -41,8 +41,8 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([48.83, 2.32]).addTo(map) // EDIT marker coordinates
-  .bindPopup("til next time!"); // EDIT pop-up text message
+  L.marker([47.626, -122.363]).addTo(map) // EDIT marker coordinates
+  .bindPopup("The new spot is rad :)"); // EDIT pop-up text message
 
   </script>
 </body>
